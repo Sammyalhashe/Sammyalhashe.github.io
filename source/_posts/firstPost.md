@@ -40,3 +40,44 @@ simply because I stumbled upon a blog post that sung its praises and it
 also had easy to follow documentation for setting it up for Github
 Pages. I followed its documentation
 [here](https://hexo.io/docs/github-pages).
+
+Pandoc
+------
+
+Pandoc is an extremely powerful tool that converts files from one markup
+format to another. Initially I was looking to leverage a plugin I found
+for Hexo <https://github.com/coldnew/hexo-renderer-org> but it had
+issues and also required for emacs to be installed on my system which I
+didn\'t want. I settled on using python to run a pandoc command to
+convert from orgmode to markdown (which is what Hexo works with by
+default).
+
+``` {.python}
+#!/usr/bin/env python3
+
+import sys
+
+from os import listdir
+from os.path import isfile, join
+from subprocess import run
+
+def main():
+    copy_from = sys.argv[1]
+    copy_to   = sys.argv[2]
+
+
+    for _file in [f for f in listdir(copy_from) if isfile(join(copy_from, f))]:
+        file_path = join(copy_from, _file)
+
+        filename = _file.split(".")[0]
+
+        run(["pandoc",
+             "-s",
+             "-f", "org",
+             "-t", "markdown",
+             "-o", f"{join(copy_to, filename)}.md",
+             f"{file_path}"])
+
+if __name__ == "__main__":
+    main()
+```
