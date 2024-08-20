@@ -39,7 +39,9 @@ Hexo is a static site generator similar to Jekyll. I decided to use this
 simply because I stumbled upon a blog post that sung its praises and it
 also had easy to follow documentation for setting it up for Github
 Pages. I followed its documentation
-[here](https://hexo.io/docs/github-pages).
+[here](https://hexo.io/docs/github-pages). I recently came across
+another framework called Hugo and it has a built in org renderer so in
+the future it might be worth to make the jump.
 
 Pandoc
 ------
@@ -81,3 +83,11 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+Raspberry Pi
+------------
+
+I host all the markup files that I edit on my Raspberry Pi. Once I make
+a change, a set of scripts are run that uses Pandoc to convert org to
+markdown, create a commit with the date, and push changes to Github
+(where the Github Pages action I defined takes over).
