@@ -65,6 +65,9 @@ integrates with the tools I already use. This is how I accomplished that.
                 "-o", f"{join(copy_to, filename)}.md",
                 f"{file_path}"])
 
+           run(["/home/salhashemi2/self_scripts/change_markdown_code_format",
+                f"{join(copy_to, filename)}.md"])
+
    if __name__ == "__main__":
        main()
    #+end_src
