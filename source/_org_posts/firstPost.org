@@ -74,7 +74,7 @@ integrates with the tools I already use. This is how I accomplished that.
 
    The bottom ~run~ command was necessary because pandoc was converting to a
    version of markdown called extended markdown, which wrapped code blocks in a
-   ~```{.language}```~ block instead of the standard ~```language```~ block.
+   ~```{ .language }```~ block instead of the standard ~```language```~ block.
    This caused Hexo to render the codeblocks as a plaintext file instead of the
    language they were typed in so no syntax highlighting :(.
 ** Raspberry Pi

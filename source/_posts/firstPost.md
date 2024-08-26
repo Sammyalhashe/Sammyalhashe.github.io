@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
 The bottom `run` command was necessary because pandoc was converting to
 a version of markdown called extended markdown, which wrapped code
-blocks in a ```` ```language``` ```` block instead of the standard
+blocks in a ```` ```{ .language }``` ```` block instead of the standard
 ```` ```language``` ```` block. This caused Hexo to render the
 codeblocks as a plaintext file instead of the language they were typed
 in so no syntax highlighting :(.
