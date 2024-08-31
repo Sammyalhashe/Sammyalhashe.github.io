@@ -100,4 +100,4 @@ Raspberry Pi
 I host all the markup files that I edit on my Raspberry Pi. Once I make
 a change, a set of scripts are run that uses Pandoc to convert org to
 markdown, create a commit with the date, and push changes to Github
-(where the Github Pages action I defined takes over). shsha
+(where the Github Pages action I defined takes over).
