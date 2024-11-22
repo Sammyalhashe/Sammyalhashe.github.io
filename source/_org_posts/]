@@ -1,7 +1,8 @@
 #+title: Working with devenv on a basic Python project
 #+author: Sammy Al Hashemi
 
-My friends and I have been working on a basic personal python project. During initial project setup, as I have been experimenting with nix, I decided to give ~devenv.sh~ a try.
+My friends and I have been working on a basic personal python project. During initial project setup, as I have been experimenting with nix, I decided to give
+~devenv.sh~ a try.
 
 [[https://devenv.sh/][devenv website]]
 
