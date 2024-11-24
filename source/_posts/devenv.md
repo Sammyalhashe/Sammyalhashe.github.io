@@ -19,4 +19,3 @@ What it is
 -   You can specify packages to install, shell dependencies that you
     want in your dev environment, run scripts on shell startup, and run
     services crucial to your development in the background.
--   tests
