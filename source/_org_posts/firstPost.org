@@ -12,11 +12,7 @@ integrates with the tools I already use. This is how I accomplished that.
   - Pandoc
   - Git
 
-  The basic premise is that I configure a github pages repository that deploys
-  everytime something is pushed to its ~master~ branch. For now, I am being a
-  little silly and running a bash script that automatically creates a new
-  commit and pushes it up when it notices I made a change after a configurable
-  amount of time.
+  The basic premise is that I configure a github pages repository that deploys everytime something is pushed to its ~master~ branch. For now, I am being a little silly and running a bash script that automatically creates a new commit and pushes it up when it notices I made a change after a configurable amount of time.
 
 
 * Basic Infrastructure
