@@ -1,4 +1,6 @@
 #+title: How I made this blog.
+#+date: <2024-09-10 Tue>
+#+tags: hexo, blogging, org-mode, RaspberryPi
 
 I've been wanting to make a blogging system that works relatively seemless and
 integrates with the tools I already use. This is how I accomplished that.

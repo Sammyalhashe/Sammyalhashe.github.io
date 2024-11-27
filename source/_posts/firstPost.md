@@ -1,4 +1,6 @@
 ---
+date: '\<2024-09-10 Tue\>'
+tags: 'hexo, blogging, org-mode, RaspberryPi'
 title: How I made this blog.
 ---
 
