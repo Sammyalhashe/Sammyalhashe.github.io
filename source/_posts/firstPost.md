@@ -15,6 +15,7 @@ Tools I use
 -   Raspberry Pi
 -   Python/Bash
 -   Pandoc
+-   Git
 
 The basic premise is that I configure a github pages repository that
 deploys everytime something is pushed to its `master` branch. For now, I
