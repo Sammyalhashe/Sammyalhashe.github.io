@@ -100,8 +100,8 @@ ignore:
 ## Themes: https://hexo.io/themes/
 # theme: alpha-dust
 # theme: minimalism
-# theme: ascent
-theme: typo
+theme: ascent
+# theme: typo
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
