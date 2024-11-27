@@ -1,0 +1,3 @@
+[submodule "themes/ascent"]
+	path = themes/ascent
+	url = https://github.com/cjquines/hexo-theme-ascent
