@@ -17,24 +17,13 @@ integrates with the tools I already use. This is how I accomplished that.
 
 * Basic Infrastructure
 ** Github Pages
-   Github pages was probably the simplest way to get a simple website up and
-   running. All I did was follow it's basic guide [[https://pages.github.com/][here]].
+   Github pages was probably the simplest way to get a simple website up and running. All I did was follow it's basic guide [[https://pages.github.com/][here]].
  
 ** Hexo
-   Hexo is a static site generator similar to Jekyll. I decided to use this
-   simply because I stumbled upon a blog post that sung its praises and it also
-   had easy to follow documentation for setting it up for Github Pages. I
-   followed its documentation [[https://hexo.io/docs/github-pages][here]]. I
-   recently came across another framework called Hugo and it has a built in
-   org renderer so in the future it might be worth to make the jump.
+   Hexo is a static site generator similar to Jekyll. I decided to use this simply because I stumbled upon a blog post that sung its praises and it also had easy to follow documentation for setting it up for Github Pages. I followed its documentation [[https://hexo.io/docs/github-pages][here]]. I recently came across another framework called Hugo and it has a built in org renderer so in the future it might be worth to make the jump.
 
 ** Pandoc
-   Pandoc is an extremely powerful tool that converts files from one markup
-   format to another. Initially I was looking to leverage a plugin I found for
-   Hexo [[https://github.com/coldnew/hexo-renderer-org]] but it had issues and
-   also required for emacs to be installed on my system which I didn't want. I
-   settled on using python to run a pandoc command to convert from orgmode to
-   markdown (which is what Hexo works with by default).
+   Pandoc is an extremely powerful tool that converts files from one markup format to another. Initially I was looking to leverage a plugin I found for Hexo [[https://github.com/coldnew/hexo-renderer-org]] but it had issues and also required for emacs to be installed on my system which I didn't want. I settled on using python to run a pandoc command to convert from orgmode to markdown (which is what Hexo works with by default).
 
    #+begin_src python
    #!/usr/bin/env python3
@@ -69,13 +58,7 @@ integrates with the tools I already use. This is how I accomplished that.
        main()
    #+end_src
 
-   The bottom ~run~ command was necessary because pandoc was converting to a
-   version of markdown called extended markdown, which wrapped code blocks in a
-   ~```{ .language }```~ block instead of the standard ~```language```~ block.
-   This caused Hexo to render the codeblocks as a plaintext file instead of the
-   language they were typed in so no syntax highlighting :(.
+   The bottom ~run~ command was necessary because pandoc was converting to a version of markdown called extended markdown, which wrapped code blocks in a ~```{ .language }```~ block instead of the standard ~```language```~ block. This caused Hexo to render the codeblocks as a plaintext file instead of the language they were typed in so no syntax highlighting :(.
+
 ** Raspberry Pi
-   I host all the markup files that I edit on my Raspberry Pi. Once I make a change,
-   a set of scripts are run that uses Pandoc to convert org to markdown, create a
-   commit with the date, and push changes to Github (where the Github Pages action
-   I defined takes over).
+   I host all the markup files that I edit on my Raspberry Pi. Once I make a change, a set of scripts are run that uses Pandoc to convert org to markdown, create a commit with the date, and push changes to Github (where the Github Pages action I defined takes over).
