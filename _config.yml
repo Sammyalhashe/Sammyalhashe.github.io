@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Sammy Al Hashemi's Personal Blog.
+title: Sammy Al Hashemi's Notes
 subtitle: ''
 description: ''
 keywords:
@@ -100,7 +100,8 @@ ignore:
 ## Themes: https://hexo.io/themes/
 # theme: alpha-dust
 # theme: minimalism
-theme: ascent
+# theme: ascent
+theme: typo
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

@@ -1,3 +1,6 @@
 [submodule "themes/ascent"]
 	path = themes/ascent
 	url = https://github.com/cjquines/hexo-theme-ascent
+[submodule "themes/typo"]
+	path = themes/typo
+	url = https://github.com/rankangkang/hexo-theme-typo.git
