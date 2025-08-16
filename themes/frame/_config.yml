@@ -3,7 +3,7 @@
 language: en
 
 # header
-site_brand_name: Frame.
+site_brand_name: Sammy's Notes.
 
 logo_image:
   enable: false
@@ -12,7 +12,7 @@ logo_image:
 menu:
   Home: /
   Archive: /archives/
-  Gallery: /categories/gallery/
+  Portfolio: https://salh.xyz
 
 # stylesheets loaded in the <head>
 stylesheets:
