@@ -67,7 +67,8 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+# default_category: uncategorized
+default_category: gallery
 category_map:
 tag_map:
 
