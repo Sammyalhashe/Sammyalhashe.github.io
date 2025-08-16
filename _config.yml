@@ -100,7 +100,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 # theme: alpha-dust
 # theme: minimalism
-theme: ascent
+theme: frame
 # theme: typo
 
 # Deployment
