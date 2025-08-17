@@ -20,6 +20,6 @@ object is not being modified.
 - If you take it as a writer, only readers are not able to access the shared
   resource
 In the example above, this improves the concurrent performance overall for the
-read-heavy workload
+read-heavy workload because it erases starvation.
 
 
